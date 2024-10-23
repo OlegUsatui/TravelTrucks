@@ -3,19 +3,19 @@
 nav {
     display: flex;
     justify-content: flex-start;
-    padding: 10px 20px;
+    gap: 32px;
 }
 
 .link {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
     text-decoration: none;
     color: var(--dark-navy);
-    margin-right: 20px;
 }
 
 .active {
     color: var(--red-dark);
-    font-weight: bold;
 }
 
 .link:hover {

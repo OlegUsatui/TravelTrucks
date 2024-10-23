@@ -1,13 +1,15 @@
 @import '@styles/variables.css';
 
 .header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 16px 32px;
     background-color: var(--white);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .logo {
