@@ -1,7 +1,11 @@
+import sprite from '@assets/sprite.svg';
+
 const Logo = () => {
   return (
     <div>
-      Logo
+      <svg width="136" height="16">
+        <use xlinkHref={`${sprite}#icon-logo`} />
+      </svg>
     </div>
   );
 };
