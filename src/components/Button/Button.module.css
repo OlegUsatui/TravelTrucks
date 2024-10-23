@@ -1,14 +1,18 @@
 @import '@styles/variables.css';
 
 .button {
+    width: 166px;
+    max-width: 166px;
+    height: 56px;
+    max-height: 56px;
     border-radius: 200px;
+    padding: 0;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, border 0.3s;
 }
 
 .filled {
-    padding: 16px 60px;
     background-color: var(--red-light);
     color: var(--white);
     border: none;
@@ -19,7 +23,6 @@
 }
 
 .outlined {
-    padding: 16px 32px;
     background-color: transparent;
     color: var(--dark-navy);
     border: 2px solid var(--light-gray-1);

@@ -3,36 +3,17 @@
 .header {
     position: fixed;
     top: 0;
+    width: 100%;
+    background-color: var(--light-gray-3);
+}
+
+.container {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 16px 32px;
-    background-color: var(--white);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    position: absolute;
-    left: 32px;
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--dark-navy);
-}
-
-.nav {
-    display: flex;
-    gap: 24px;
-}
-
-.navLink {
-    font-size: 16px;
-    color: var(--dark-navy);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.navLink:hover,
-.navLink.active {
-    color: var(--red-light);
+    padding: 24px 64px;
 }

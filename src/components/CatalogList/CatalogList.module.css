@@ -1,0 +1,8 @@
+@import '@styles/variables.css';
+
+.catalogList {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex: 3;
+}
