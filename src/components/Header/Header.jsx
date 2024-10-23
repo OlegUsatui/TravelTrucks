@@ -1,12 +1,10 @@
-import { NavLink } from 'react-router-dom';
-import clsx from 'clsx';
-import css from './Header.module.css';
 import Navigation from '../Navigation/Navigation.jsx';
 import Logo from '../Logo/Logo.jsx';
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <Logo />
       <Navigation />
     </header>

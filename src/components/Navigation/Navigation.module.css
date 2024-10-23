@@ -1,22 +1,21 @@
+@import '@styles/variables.css';
+
 nav {
     display: flex;
     justify-content: flex-start;
     padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .link {
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: var(--dark-navy);
     margin-right: 20px;
 }
 
 .active {
-    color: #e91e63; /* Цвет выделенной ссылки */
+    color: var(--red-dark);
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .link:hover {

@@ -1,0 +1,9 @@
+@import '@styles/variables.css';
+
+.logo {
+    position: absolute;
+    left: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark-navy);
+}
