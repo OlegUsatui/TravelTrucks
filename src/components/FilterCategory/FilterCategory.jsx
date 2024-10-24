@@ -4,12 +4,12 @@ import FilterItem from '@components/FilterItem/FilterItem.jsx';
 const FilterCategory = ({ title, list }) => {
   return (
     <div className={styles.filterCategory}>
-      <div className={styles.categoryTitle}>{title}</div>
-      <div className={styles.categoryList}>
+      <h3 className={styles.categoryTitle}>{title}</h3>
+      <ul className={styles.categoryList}>
         {list.map((item, index) => (
-          <FilterItem key={index} icon={item.icon} name={item.name}></FilterItem>
+          <FilterItem key={index} icon={item.icon} name={item.label}></FilterItem>
         ))}
-      </div>
+      </ul>
 
     </div>
 
