@@ -10,6 +10,7 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, './src/assets'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@components': path.resolve(__dirname, './src/components'),
+      '@redux': path.resolve(__dirname, './src/redux'),
     },
   },
 })

@@ -9,8 +9,8 @@ const FilterSection = () => {
       <LocationFilter></LocationFilter>
       <div className={styles.filterCategories}>
         <div className={styles.filterTitle}>Filters</div>
-        <FilterCategory title={'Vehicle equipment'} list={}></FilterCategory>
-        <FilterCategory title={'Vehicle type'} list={}></FilterCategory>
+        {/*<FilterCategory title={'Vehicle equipment'} list={}></FilterCategory>*/}
+        {/*<FilterCategory title={'Vehicle type'} list={}></FilterCategory>*/}
       </div>
 
       <Button label="Search" onClick={() => {}} variant="filled" />

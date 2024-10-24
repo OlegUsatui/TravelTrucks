@@ -7,7 +7,6 @@ const FilterCategory = ({ title, list }) => {
       <div className={styles.categoryTitle}>{title}</div>
       <div className={styles.categoryList}>
         {list.map((item, index) => (
-
           <FilterItem key={index} icon={item.icon} name={item.name}></FilterItem>
         ))}
       </div>
