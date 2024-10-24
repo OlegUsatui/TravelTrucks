@@ -17,8 +17,8 @@ const CamperDetailsPage = () => {
         <div className={styles.camperDetails}>
           <CamperTitle name={camper.name}/>
           <CamperRatingAndLocation id={camper.id} rating={camper.rating} reviews={camper.reviews} location={camper.location}/>
-          <Gallery />
           <CamperPrice price={camper.price} />
+          <Gallery images={camper.gallery}/>
           <p className={styles.camperDescription}>{camper.description}</p>
         </div>
         <Outlet />

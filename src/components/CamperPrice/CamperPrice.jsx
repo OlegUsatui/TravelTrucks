@@ -3,7 +3,7 @@ import styles from './CamperPrice.module.css';
 
 const CamperPrice = ({ price }) => {
   return (
-    <p className={styles.camperPrice}>{ price }</p>
+    <p className={styles.camperPrice}>${ price }</p>
   );
 };
 
