@@ -1,6 +1,31 @@
 @import '@styles/variables.css';
 
+.detailsPage {
+    padding-top: 72px;
+    background-color: var(--white);
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.camperDetails {
+
+}
+
+.camperName {
+    color: var(--dark-navy);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.camperDescription {
+
+}
+
+.camperPrice {
+
 }

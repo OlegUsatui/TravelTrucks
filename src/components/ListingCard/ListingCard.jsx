@@ -2,40 +2,34 @@ import Button from '@components/Button/Button.jsx';
 import styles from './ListingCard.module.css';
 import CategoryTag from '@components/CategoryTag/CategoryTag.jsx';
 import sprite from '@assets/sprite.svg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import CamperTitle from '@components/CamperTitle/CamperTitle.jsx';
+import CamperPrice from '@components/CamperPrice/CamperPrice.jsx';
+import CamperRatingAndLocation from '@components/CamperRatingAndLocation/CamperRatingAndLocation.jsx';
+import CamperLike from '@components/CamperLike/CamperLike.jsx';
 
 const ListingCard = ({ item }) => {
+  const navigate = useNavigate();
+
+  const handleShowMoreClick = () => {
+    navigate(`/catalog/${item.id}`);
+  };
+
   return (
     <li className={styles.listingCard}>
       <img src={item.gallery[0].thumb} alt={item.name} className={styles.listingImage} />
       <div className={styles.listingContent}>
         <div className={styles.listingTitle}>
-          <h2 className={styles.listingText}>{item.name}</h2>
-          <p className={styles.listingPrice}>
-            {item.price}
-          </p>
-          <svg width="26" height="24" className={styles.listingLike}>
-            <use xlinkHref={`${sprite}#icon-like`} />
-          </svg>
+          <CamperTitle name={item.name} />
+          <CamperPrice price={item.price} />
+          <CamperLike/>
         </div>
-        <div className={styles.listingDetails}>
-          <Link className={styles.listingReviews} to={`/campers/${item.id}/reviews`}>
-            <svg width="16" height="16" className={styles.listingReviewsIcon}>
-              <use xlinkHref={`${sprite}#icon-star`} />
-            </svg>
-            {item.rating}
-            ({item.reviews.length} Reviews)
-          </Link>
-          <span className={styles.listingLocation}>
-            <svg width="16" height="16">
-              <use xlinkHref={`${sprite}#icon-map`} />
-            </svg>
-            {item.location}
-          </span>
-        </div>
+        <CamperRatingAndLocation id={item.id} rating={item.rating} reviews={item.reviews} location={item.location}/>
+
         <div className={styles.listingSubtitle} title={item.description}>
           {item.description}
         </div>
+
         <div className={styles.listingTags}>
           { item.AC &&  <CategoryTag label={'AC'} icon={'wind'} /> }
           { item.bathroom &&  <CategoryTag label={'Bathroom'} icon={'bathroom'} /> }
@@ -49,8 +43,7 @@ const ListingCard = ({ item }) => {
           { item.transmission === "automatic" &&  <CategoryTag label={'Automatic'} icon={'diagram'} /> }
         </div>
         <div className={styles.showMoreButton}>
-          <Button label="Show more" onClick={() => {
-          }} variant="filled" />
+          <Button label="Show more" onClick={handleShowMoreClick} variant="filled" />
         </div>
       </div>
     </li>

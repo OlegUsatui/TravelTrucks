@@ -1,0 +1,26 @@
+
+.listingDetails {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.listingReviews {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.listingReviews:hover {
+    text-decoration: underline;
+}
+
+.listingReviewsIcon {
+    fill: #FFC531;
+}
+
+.listingLocation {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

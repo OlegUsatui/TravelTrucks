@@ -1,6 +1,6 @@
 import './App.module.css';
 import React, { Suspense, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
 import { useDispatch } from 'react-redux';
 import { fetchCampers } from './redux/campersOps.js';
@@ -28,6 +28,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<CatalogPage />} />
           <Route path="/catalog/:catalogId" element={<CamperDetailsPage />}>
+            <Route index element={<Navigate to="features" replace />} />
             <Route path="features" element={<CamperFeatures />} />
             <Route path="reviews" element={<CamperReviews />} />
           </Route>

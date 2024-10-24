@@ -30,49 +30,9 @@
     margin-bottom: 8px;
 }
 
-.listingText {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--dark-navy);
-    margin: 0 auto 0 0;
-}
 
-.listingPrice {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--dark-navy);
-    margin: 0 12px 0 0;
-}
 
-.listingLike.active {
-    fill: var(--red-light);
-}
 
-.listingDetails {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 24px;
-}
-.listingReviews {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.listingReviews:hover {
-    text-decoration: underline;
-}
-
-.listingReviewsIcon {
-    fill: #FFC531;
-}
-
-.listingLocation {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
 
 .listingSubtitle {
     white-space: nowrap;
