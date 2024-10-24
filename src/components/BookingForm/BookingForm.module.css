@@ -1,0 +1,22 @@
+.bookingFormWrapper {
+    padding: 32px;
+    border-radius: 10px;
+    border: 1px solid var(--light-gray-1);
+    flex: 1;
+}
+
+.bookingFormWrapper h2 {
+    margin-bottom: 8px;
+}
+
+.bookingFormWrapper p {
+    margin-bottom: 24px;
+}
+
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+

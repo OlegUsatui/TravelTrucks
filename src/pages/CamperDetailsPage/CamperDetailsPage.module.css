@@ -15,14 +15,24 @@
     margin-bottom: 60px;
 }
 
-.camperName {
-    color: var(--dark-navy);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
+.camperNameWrapper {
+    margin-bottom: 8px;
 }
 
+.camperRatingAndLocationWrapper {
+    margin-bottom: 16px;
+}
+
+.camperPriceWrapper {
+    margin-bottom: 28px;
+}
+
+.camperPriceWrapper {
+    margin-bottom: 28px;
+}
+.camperGalleryWrapper {
+    margin-bottom: 28px;
+}
 .camperDescription {
     color: var(--navy);
     font-size: 16px;
