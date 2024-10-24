@@ -1,3 +1,4 @@
+import styles from './CamperReviews.module.css';
 
 const CamperReviews = () => {
   return (

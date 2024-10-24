@@ -1,12 +1,11 @@
 import Button from '@components/Button/Button.jsx';
 import styles from './ListingCard.module.css';
-import CategoryTag from '@components/CategoryTag/CategoryTag.jsx';
-import sprite from '@assets/sprite.svg';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import CamperTitle from '@components/CamperTitle/CamperTitle.jsx';
 import CamperPrice from '@components/CamperPrice/CamperPrice.jsx';
 import CamperRatingAndLocation from '@components/CamperRatingAndLocation/CamperRatingAndLocation.jsx';
 import CamperLike from '@components/CamperLike/CamperLike.jsx';
+import CamperTagsList from '@components/CamperTagsList/CamperTagsList.jsx';
 
 const ListingCard = ({ item }) => {
   const navigate = useNavigate();
@@ -22,26 +21,16 @@ const ListingCard = ({ item }) => {
         <div className={styles.listingTitle}>
           <CamperTitle name={item.name} />
           <CamperPrice price={item.price} />
-          <CamperLike/>
+          <CamperLike />
         </div>
-        <CamperRatingAndLocation id={item.id} rating={item.rating} reviews={item.reviews} location={item.location}/>
+        <CamperRatingAndLocation id={item.id} rating={item.rating} reviews={item.reviews} location={item.location} />
 
         <div className={styles.listingSubtitle} title={item.description}>
           {item.description}
         </div>
 
-        <div className={styles.listingTags}>
-          { item.AC &&  <CategoryTag label={'AC'} icon={'wind'} /> }
-          { item.bathroom &&  <CategoryTag label={'Bathroom'} icon={'bathroom'} /> }
-          { item.kitchen &&  <CategoryTag label={'Kitchen'} icon={'cup-hot'} /> }
-          { item.TV &&  <CategoryTag label={'TV'} icon={'tv'} /> }
-          { item.radio &&  <CategoryTag label={'Radio'} icon={'radio'} /> }
-          { item.refrigerator &&  <CategoryTag label={'Refrigerator'} icon={'refrigerator'} /> }
-          { item.microwave &&  <CategoryTag label={'Microwave'} icon={'microwave'} /> }
-          { item.gas &&  <CategoryTag label={'Gas'} icon={'gas'} /> }
-          { item.water &&  <CategoryTag label={'Water'} icon={'water'} /> }
-          { item.transmission === "automatic" &&  <CategoryTag label={'Automatic'} icon={'diagram'} /> }
-        </div>
+        <CamperTagsList item={item}/>
+
         <div className={styles.showMoreButton}>
           <Button label="Show more" onClick={handleShowMoreClick} variant="filled" />
         </div>
