@@ -1,13 +1,18 @@
 import styles from './FilterCategory.module.css';
 import FilterItem from '@components/FilterItem/FilterItem.jsx';
 
-const FilterCategory = ({title}) => {
+const FilterCategory = ({ title, list }) => {
   return (
-    <>
-      <div>{title}</div>
-      {/*<FilterItem icon={} name={}></FilterItem>*/}
-      {/*<FilterItem icon={} name={}></FilterItem>*/}
-    </>
+    <div className={styles.filterCategory}>
+      <div className={styles.categoryTitle}>{title}</div>
+      <div className={styles.categoryList}>
+        {list.map((item, index) => (
+
+          <FilterItem key={index} icon={item.icon} name={item.name}></FilterItem>
+        ))}
+      </div>
+
+    </div>
 
   );
 };

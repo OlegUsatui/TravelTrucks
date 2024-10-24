@@ -1,0 +1,12 @@
+.filterCategory {
+
+}
+
+.categoryTitle {
+
+}
+
+.categoryList {
+    display: flex;
+    flex-wrap: wrap;
+}
