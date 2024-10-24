@@ -7,14 +7,14 @@ const CatalogList = () => {
   const filteredCampers = useSelector(selectAllCampers);
 
   return (
-    <div className={styles.catalogList}>
+    <ul className={styles.catalogList}>
       {filteredCampers.map((camper, index) => (
         <ListingCard
           key={index}
           item={camper}
         />
       ))}
-    </div>
+    </ul>
   );
 };
 

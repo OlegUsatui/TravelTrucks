@@ -1,19 +1,36 @@
 import Button from '@components/Button/Button.jsx';
 import styles from './ListingCard.module.css';
 import CategoryTag from '@components/CategoryTag/CategoryTag.jsx';
+import sprite from '@assets/sprite.svg';
 
 const ListingCard = ({ item }) => {
   return (
-    <div className={styles.listingCard}>
+    <li className={styles.listingCard}>
       <img src={item.gallery[0].thumb} alt={item.name} className={styles.listingImage} />
       <div className={styles.listingContent}>
         <div className={styles.listingTitle}>
-          <h3 className={styles.listingText}>{item.name}</h3>
-          <p className={styles.listingPrice}>{item.price}</p>
+          <h2 className={styles.listingText}>{item.name}</h2>
+          <p className={styles.listingPrice}>
+            {item.price}
+          </p>
+          <svg width="26" height="24">
+            <use xlinkHref={`${sprite}#icon-like`} />
+          </svg>
         </div>
         <div className={styles.listingDetails}>
-          <span className={styles.listingReviews}>({item.reviews.length} Reviews)</span>
-          <span className={styles.listingLocation}>{item.location}</span>
+          <span className={styles.listingReviews}>
+            <svg width="16" height="16" className={styles.listingReviewsIcon}>
+              <use xlinkHref={`${sprite}#icon-star`} />
+            </svg>
+            {item.rating}
+            ({item.reviews.length} Reviews)
+          </span>
+          <span className={styles.listingLocation}>
+            <svg width="16" height="16">
+              <use xlinkHref={`${sprite}#icon-map`} />
+            </svg>
+            {item.location}
+          </span>
         </div>
         <div className={styles.listingSubtitle} title={item.description}>
           {item.description}
@@ -30,10 +47,12 @@ const ListingCard = ({ item }) => {
           { item.water &&  <CategoryTag label={'Water'} icon={'water'} /> }
           { item.transmission === "automatic" &&  <CategoryTag label={'Automatic'} icon={'diagram'} /> }
         </div>
-        <Button label="Show more" onClick={() => {
-        }} variant="filled" className={styles.showMoreButton} />
+        <div className={styles.showMoreButton}>
+          <Button label="Show more" onClick={() => {
+          }} variant="filled" />
+        </div>
       </div>
-    </div>
+    </li>
   );
 };
 
