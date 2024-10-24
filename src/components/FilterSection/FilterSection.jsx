@@ -7,8 +7,8 @@ const FilterSection = () => {
   return (
     <div className={styles.filterSection}>
       <LocationFilter></LocationFilter>
-      <div>
-        <div>Filters</div>
+      <div className={styles.filterCategories}>
+        <div className={styles.filterTitle}>Filters</div>
         <FilterCategory title={'Vehicle equipment'}></FilterCategory>
         <FilterCategory title={'Vehicle type'}></FilterCategory>
       </div>
