@@ -2,6 +2,7 @@ import Button from '@components/Button/Button.jsx';
 import styles from './ListingCard.module.css';
 import CategoryTag from '@components/CategoryTag/CategoryTag.jsx';
 import sprite from '@assets/sprite.svg';
+import { Link } from 'react-router-dom';
 
 const ListingCard = ({ item }) => {
   return (
@@ -13,18 +14,18 @@ const ListingCard = ({ item }) => {
           <p className={styles.listingPrice}>
             {item.price}
           </p>
-          <svg width="26" height="24">
+          <svg width="26" height="24" className={styles.listingLike}>
             <use xlinkHref={`${sprite}#icon-like`} />
           </svg>
         </div>
         <div className={styles.listingDetails}>
-          <span className={styles.listingReviews}>
+          <Link className={styles.listingReviews} to={`/campers/${item.id}/reviews`}>
             <svg width="16" height="16" className={styles.listingReviewsIcon}>
               <use xlinkHref={`${sprite}#icon-star`} />
             </svg>
             {item.rating}
             ({item.reviews.length} Reviews)
-          </span>
+          </Link>
           <span className={styles.listingLocation}>
             <svg width="16" height="16">
               <use xlinkHref={`${sprite}#icon-map`} />

@@ -25,7 +25,7 @@
 .outlined {
     background-color: transparent;
     color: var(--dark-navy);
-    border: 2px solid var(--light-gray-1);
+    border: 1px solid var(--light-gray-1);
 }
 
 .outlined:hover {

@@ -1,8 +1,15 @@
 @import '@styles/variables.css';
 
+.catalogContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex: 3;
+}
+
 .catalogList {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    flex: 3;
 }
