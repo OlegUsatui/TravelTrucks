@@ -8,10 +8,10 @@ const CatalogList = () => {
 
   return (
     <div className={styles.catalogList}>
-      {filteredCampers.map((listing, index) => (
+      {filteredCampers.map((camper, index) => (
         <ListingCard
           key={index}
-          listing={listing}
+          item={camper}
         />
       ))}
     </div>
