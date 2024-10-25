@@ -1,12 +1,13 @@
 import styles from './FormField.module.css'
-const FormField = ({ label, type, name, required }) => {
+import clsx from 'clsx';
+const FormField = ({ label, type, name, placeholder, required }) => {
   return (
     <label className={styles.formField}>
       {label}
       {type === 'textarea' ? (
-        <textarea name={name} required={required} className={styles.inputField}></textarea>
+        <textarea name={name} required={required} placeholder={placeholder} className={clsx(styles.inputField, styles.textarea)} ></textarea>
       ) : (
-        <input type={type} name={name} required={required} className={styles.inputField} />
+        <input type={type} name={name} required={required} placeholder={placeholder} className={styles.inputField} />
       )}
     </label>
   );

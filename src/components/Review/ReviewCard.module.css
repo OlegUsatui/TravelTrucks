@@ -1,0 +1,31 @@
+.reviewCard {
+    padding: 20px;
+    max-width: 500px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatarPlaceholder {
+
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #f5a623;
+    font-size: 14px;
+}
+
+.reviewText {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 1.6;
+}

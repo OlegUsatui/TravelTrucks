@@ -16,7 +16,12 @@
 .bookingForm {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    gap: 14px;
+}
+
+.buttonWrapper {
+    margin-top: 8px;
 }
 
 
