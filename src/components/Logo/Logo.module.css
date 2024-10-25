@@ -4,3 +4,8 @@
     position: absolute;
     left: 64px;
 }
+
+.link {
+    display: flex;
+    align-items: center;
+}
