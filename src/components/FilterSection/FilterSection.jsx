@@ -5,18 +5,18 @@ import Button from '@components/Button/Button.jsx';
 
 const FilterSection = () => {
   const vehicleEquipment = [
-    {label: 'AC', icon: 'wind'},
-    {label: 'Automatic', icon: 'diagram'},
-    {label: 'Kitchen', icon: 'cup-hot'},
-    {label: 'TV', icon: 'tv'},
-    {label: 'Bathroom', icon: 'bathroom'},
-  ]
+    { label: 'AC', icon: 'wind' },
+    { label: 'Automatic', icon: 'diagram' },
+    { label: 'Kitchen', icon: 'cup-hot' },
+    { label: 'TV', icon: 'tv' },
+    { label: 'Bathroom', icon: 'bathroom' },
+  ];
 
   const vehicleType = [
-    {label: 'Van', icon: 'van'},
-    {label: 'Fully Integrated', icon: 'fully-integrated'},
-    {label: 'Alcove', icon: 'alcove'},
-  ]
+    { label: 'Van', icon: 'van' },
+    { label: 'Fully Integrated', icon: 'fully-integrated' },
+    { label: 'Alcove', icon: 'alcove' },
+  ];
   return (
     <div className={styles.filterSection}>
       <LocationFilter></LocationFilter>
@@ -25,10 +25,9 @@ const FilterSection = () => {
         <FilterCategory title={'Vehicle equipment'} list={vehicleEquipment}></FilterCategory>
         <FilterCategory title={'Vehicle type'} list={vehicleType}></FilterCategory>
       </div>
-
-      <Button label="Search" onClick={() => {}} variant="filled" />
+      <Button label="Search" onClick={() => {
+      }} variant="filled" />
     </div>
-
   );
 };
 

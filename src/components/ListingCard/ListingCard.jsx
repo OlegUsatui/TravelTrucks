@@ -29,7 +29,7 @@ const ListingCard = ({ item }) => {
           {item.description}
         </div>
 
-        <CamperTagsList item={item}/>
+        <CamperTagsList item={item} />
 
         <div className={styles.showMoreButton}>
           <Button label="Show more" onClick={handleShowMoreClick} variant="filled" />

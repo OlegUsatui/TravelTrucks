@@ -1,7 +1,7 @@
 import CategoryTag from '@components/CategoryTag/CategoryTag.jsx';
 import styles from './CamperTagsList.module.css';
 
-const CamperTagsList = ({item}) => {
+const CamperTagsList = ({ item }) => {
   return (
     <div className={styles.listingTags}>
       {item.AC && <CategoryTag label={'AC'} icon={'wind'} />}
@@ -13,8 +13,8 @@ const CamperTagsList = ({item}) => {
       {item.microwave && <CategoryTag label={'Microwave'} icon={'microwave'} />}
       {item.gas && <CategoryTag label={'Gas'} icon={'gas'} />}
       {item.water && <CategoryTag label={'Water'} icon={'water'} />}
-      {item.transmission === "automatic" && <CategoryTag label={'Automatic'} icon={'diagram'} />}
+      {item.transmission === 'automatic' && <CategoryTag label={'Automatic'} icon={'diagram'} />}
     </div>
-  )
-}
+  );
+};
 export default CamperTagsList;

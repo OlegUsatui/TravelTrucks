@@ -4,7 +4,6 @@ import sprite from '@assets/sprite.svg';
 
 
 const CamperRatingAndLocation = ({ id, rating, reviews, location }) => {
-
   return (
     <div className={styles.listingDetails}>
       <Link className={styles.listingReviews} to={`/catalog/${id}/reviews`}>

@@ -15,10 +15,6 @@
     border-color: var(--red-light);
 }
 
-.itemIcon {
-
-}
-
 .itemName {
     color: var(--dark-navy);
     text-align: center;

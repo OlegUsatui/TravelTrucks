@@ -30,7 +30,6 @@
     margin-bottom: 8px;
 }
 
-
 .listingSubtitle {
     white-space: nowrap;
     overflow: hidden;
@@ -43,8 +42,6 @@
     line-height: 24px;
     margin-bottom: 24px;
 }
-
-
 
 .showMoreButton {
     align-self: flex-start;

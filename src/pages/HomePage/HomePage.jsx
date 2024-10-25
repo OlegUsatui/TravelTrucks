@@ -5,8 +5,9 @@ import { useNavigate } from 'react-router-dom';
 const HomePage = () => {
   const navigate = useNavigate();
   const handleViewNowClick = () => {
-    navigate('/catalog')
-  }
+    navigate('/catalog');
+  };
+
   return (
     <div className={styles.homePage}>
       <div className={styles.container}>

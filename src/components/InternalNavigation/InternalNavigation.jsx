@@ -2,10 +2,10 @@ import styles from './InternalNavigation.module.css';
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
 
+
 const buildLinkClass = ({ isActive }) => {
   return clsx(styles.tabButton, isActive && styles.active);
 };
-
 
 const InternalNavigation = () => {
   return (

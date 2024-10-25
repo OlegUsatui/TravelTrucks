@@ -45,5 +45,5 @@
 }
 
 .input:focus + .inputIcon {
-    fill: var(--dark-navy); /* Изменение цвета иконки при фокусе на инпуте */
+    fill: var(--dark-navy);
 }

@@ -32,13 +32,13 @@ const CamperDetailsPage = () => {
           <div className={styles.camperGalleryWrapper}>
             <Gallery images={camper.gallery} />
           </div>
-            <p className={styles.camperDescription}>{camper.description}</p>
-          </div>
-          <InternalNavigation />
-          <Outlet />
+          <p className={styles.camperDescription}>{camper.description}</p>
         </div>
+        <InternalNavigation />
+        <Outlet />
       </div>
-      );
-      };
+    </div>
+  );
+};
 
-      export default CamperDetailsPage;
+export default CamperDetailsPage;

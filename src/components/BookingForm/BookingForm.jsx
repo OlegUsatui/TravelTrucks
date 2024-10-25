@@ -9,10 +9,10 @@ const BookingForm = () => {
       <h2 className={typographyStyles.titleH2}>Book your campervan now</h2>
       <p className={typographyStyles.paragraph}>Stay connected! We are always ready to help you.</p>
       <form className={styles.bookingForm}>
-        <FormField type="text" name="name" placeholder={"Name*"} required />
-        <FormField type="email" name="email" placeholder={"Email*"} required />
-        <FormField type="date" name="bookingDate" placeholder={"Booking date*"} required />
-        <FormField type="textarea" name="comment" placeholder={"Comment"} />
+        <FormField type="text" name="name" placeholder={'Name*'} required />
+        <FormField type="email" name="email" placeholder={'Email*'} required />
+        <FormField type="date" name="bookingDate" placeholder={'Booking date*'} required />
+        <FormField type="textarea" name="comment" placeholder={'Comment'} />
         <div className={styles.buttonWrapper}>
           <Button type="submit" label={'Send'}></Button>
         </div>

@@ -1,3 +1,6 @@
+import styles from './DateInput.module.css';
+
+
 const DateInput = ({ label, value, onChange, id }) => {
   return (
     <div className={styles.inputContainer}>

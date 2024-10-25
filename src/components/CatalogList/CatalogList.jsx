@@ -1,9 +1,10 @@
 import ListingCard from '@components/ListingCard/ListingCard.jsx';
 import styles from './CatalogList.module.css';
 import { useSelector } from 'react-redux';
-import { selectAllCampers, selectFilteredCampers } from '@redux/selectors.js';
+import { selectAllCampers } from '@redux/selectors.js';
 import { useState } from 'react';
 import Button from '@components/Button/Button.jsx';
+
 
 const CatalogList = () => {
   const filteredCampers = useSelector(selectAllCampers);
@@ -24,7 +25,7 @@ const CatalogList = () => {
         ))}
       </ul>
       {visibleCount < filteredCampers.length && (
-        <Button label={'Load More'} onClick={loadMore} variant={'outlined'}/>
+        <Button label={'Load More'} onClick={loadMore} variant={'outlined'} />
       )}
     </div>
   );
