@@ -1,0 +1,12 @@
+.rating {
+    display: flex;
+    gap: 2px;
+}
+
+.filledStar {
+    fill: var(--yellow);
+}
+
+.emptyStar {
+    fill: var(--light-gray-2);
+}

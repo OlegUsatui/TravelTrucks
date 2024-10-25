@@ -1,4 +1,6 @@
 import styles from './ReviewCard.module.css';
+import typographyStyles from '@styles/Typography.module.css';
+import StarRating from '@components/StarRating/StarRating.jsx';
 
 const ReviewCard = ({ name, rating, reviewText }) => {
   const renderAvatar = () => {
@@ -14,10 +16,10 @@ const ReviewCard = ({ name, rating, reviewText }) => {
         {renderAvatar()}
         <div>
           <div className={styles.name}>{name}</div>
-          <div className={styles.rating}>{'\u2605'.repeat(rating)}</div>
+          <StarRating rating={rating} />
         </div>
       </div>
-      <div className={styles.reviewText}>{reviewText}</div>
+      <div className={typographyStyles.paragraph}>{reviewText}</div>
     </div>
   );
 };
