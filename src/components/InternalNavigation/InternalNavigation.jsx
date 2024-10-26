@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import styles from './InternalNavigation.module.css';
 import clsx from 'clsx';
 import CamperFeatures from '@components/CamperFeatures/CamperFeatures.jsx';
@@ -28,23 +27,10 @@ const InternalNavigation = () => {
           Reviews
         </button>
       </div>
-      <SwitchTransition>
-        <CSSTransition
-          key={activeTab}
-          timeout={300}
-          classNames={{
-            enter: styles.tabContentEnter,
-            enterActive: styles.tabContentEnterActive,
-            exit: styles.tabContentExit,
-            exitActive: styles.tabContentExitActive,
-          }}
-        >
-          <div className={styles.tabContent}>
-            {activeTab === 'features' && <CamperFeatures />}
-            {activeTab === 'reviews' && <CamperReviews />}
-          </div>
-        </CSSTransition>
-      </SwitchTransition>
+        <div className={styles.tabContent}>
+          {activeTab === 'features' && <CamperFeatures />}
+          {activeTab === 'reviews' && <CamperReviews />}
+        </div>
     </>
 
   );
