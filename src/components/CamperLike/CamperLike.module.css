@@ -1,3 +1,6 @@
+.listingLike {
+    cursor: pointer;
+}
 .listingLike.active {
     fill: var(--red-light);
 }

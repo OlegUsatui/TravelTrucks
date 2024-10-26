@@ -21,7 +21,7 @@ const ListingCard = ({ item }) => {
         <div className={styles.listingTitle}>
           <CamperTitle name={item.name} />
           <CamperPrice price={item.price} />
-          <CamperLike />
+          <CamperLike camperId={item.id} />
         </div>
         <CamperRatingAndLocation id={item.id} rating={item.rating} reviews={item.reviews} location={item.location} />
 
