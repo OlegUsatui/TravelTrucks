@@ -13,13 +13,6 @@ const CamperFeatures = React.lazy(() => import('./components/CamperFeatures/Camp
 const CamperReviews = React.lazy(() => import('./components/CamperReviews/CamperReviews.jsx'));
 
 function App() {
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchCampers());
-  }, [dispatch]);
-
   return (
     <>
       <Header />

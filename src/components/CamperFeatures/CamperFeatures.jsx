@@ -1,14 +1,13 @@
 import styles from './CamperFeatures.module.css';
 import typographyStyles from '@styles/Typography.module.css';
-import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { selectCamperById } from '@redux/selectors.js';
 import CamperTagsList from '@components/CamperTagsList/CamperTagsList.jsx';
 import BookingForm from '@components/BookingForm/BookingForm.jsx';
 
 const CamperFeatures = () => {
-  const { catalogId } = useParams();
-  const camper = useSelector((state) => selectCamperById(state, catalogId));
+  const camper = useSelector((state) => state.campers.camperDetails);
+  const status = useSelector((state) => state.campers.status);
+  const error = useSelector((state) => state.campers.error);
 
   return (
     <div className={styles.camperFeatures}>

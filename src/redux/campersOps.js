@@ -8,7 +8,9 @@ export const fetchCampers = createAsyncThunk('campers/fetchCampers', async (para
   return response.data;
 });
 
-export const fetchCamperById = createAsyncThunk('campers/fetchCamperById', async (id) => {
+export const fetchCamperById = createAsyncThunk(
+  'campers/fetchCamperById',
+  async (id) => {
   const response = await axios.get(`/campers/${id}`);
   return response.data;
 });

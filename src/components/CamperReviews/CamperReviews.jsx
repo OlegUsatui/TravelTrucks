@@ -1,13 +1,13 @@
 import styles from './CamperReviews.module.css';
 import BookingForm from '@components/BookingForm/BookingForm.jsx';
 import ReviewCard from '@components/Review/ReviewCard.jsx';
-import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { selectCamperById } from '@redux/selectors.js';
 
 const CamperReviews = () => {
-  const { catalogId } = useParams();
-  const camper = useSelector((state) => selectCamperById(state, catalogId));
+  const camper = useSelector((state) => state.campers.camperDetails);
+  const status = useSelector((state) => state.campers.status);
+  const error = useSelector((state) => state.campers.error);
+
   return (
     <div className={styles.camperReviews}>
       <ul className={styles.reviewsList}>
