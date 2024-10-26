@@ -9,6 +9,8 @@ import CamperRatingAndLocation from '@components/CamperRatingAndLocation/CamperR
 import InternalNavigation from '@components/InternalNavigation/InternalNavigation.jsx';
 import styles from './CamperDetailsPage.module.css';
 import Loader from '@components/Loader/Loader.jsx';
+import Error404 from '@components/Error404/Error404.jsx';
+import Empty from '@components/Empty/Empty.jsx';
 
 const CamperDetailsPage = () => {
   const { catalogId } = useParams();
@@ -16,7 +18,6 @@ const CamperDetailsPage = () => {
 
   const camper = useSelector((state) => state.campers.camperDetails);
   const status = useSelector((state) => state.campers.status);
-  const error = useSelector((state) => state.campers.error);
 
   useEffect(() => {
     if (catalogId) {
@@ -29,11 +30,11 @@ const CamperDetailsPage = () => {
   }
 
   if (status === 'failed') {
-    return <div className={styles.error}>Ошибка: {error}</div>;
+    return (<Error404 height={'725'} />)
   }
 
   if (!camper) {
-    return <div className={styles.error}>Кемпер не найден</div>;
+    return <Empty text={'Camper not found...'} height={'425'}></Empty>
   }
 
   return (

@@ -23,6 +23,7 @@ const BookingForm = () => {
       [name]: value,
     }));
   };
+
   const handleDate = (value) => {
     setFormData((prevData) => ({
       ...prevData,
@@ -36,6 +37,7 @@ const BookingForm = () => {
 
     setTimeout(() => {
       toast.success('Booking request sent successfully!');
+      console.log('User data', formData);
       setFormData({
         name: '',
         email: '',
@@ -56,7 +58,8 @@ const BookingForm = () => {
                    disabled={isSubmitting} />
         <FormField type="email" name="email" placeholder={'Email*'} value={formData.email} onChange={handleChange}
                    required disabled={isSubmitting} />
-        <DateInput label={'Booking date*'} name="bookingDate" value={formData.bookingDate} onChange={handleDate}/>
+        <DateInput label={'Booking date*'} required={true} name="bookingDate" value={formData.bookingDate}
+                   onChange={handleDate} />
         <FormField type="textarea" name="comment" placeholder={'Comment'} value={formData.comment}
                    onChange={handleChange} disabled={isSubmitting} />
         <div className={styles.buttonWrapper}>

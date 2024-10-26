@@ -56,11 +56,6 @@ const FilterSection = () => {
     dispatch(setFilters(localFilters));
   };
 
-  const handleClearFilters = () => {
-    setLocalFilters(initialFiltersState);
-    dispatch(clearFilters());
-  };
-
   return (
     <div className={styles.filterSection}>
       <LocationFilter value={localFilters.location} onChange={handleLocationChange} />
@@ -81,8 +76,8 @@ const FilterSection = () => {
         <FilterCategory
           title={'Vehicle Type'}
           list={vehicleTypes}
-          onFilterChange={(value) => handleFilterChange('vehicleType', value)}
-          selectedFilters={{ [localFilters.vehicleType]: true }}
+          onFilterChange={(value) => handleFilterChange('form', value)}
+          selectedFilters={{ [localFilters.form]: true }}
         ></FilterCategory>
       </div>
       <Button label="Search" onClick={handleSearch} variant="filled" />

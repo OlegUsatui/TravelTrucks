@@ -1,8 +1,8 @@
 export const VEHICLE_EQUIPMENT = {
-  AC: 'ac',
+  AC: 'AC',
   KITCHEN: 'kitchen',
   BATHROOM: 'bathroom',
-  TV: 'tv',
+  TV: 'TV',
   REFRIGERATOR: 'refrigerator',
   MICROWAVE: 'microwave',
   RADIO: 'radio',

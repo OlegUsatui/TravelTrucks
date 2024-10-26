@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 import sprite from '../../public/sprite.svg';
 
 
-const CamperRatingAndLocation = ({ id, rating, reviews, location }) => {
+const CamperRatingAndLocation = ({ rating, reviews, location }) => {
   return (
     <div className={styles.listingDetails}>
-      <Link className={styles.listingReviews} to={`/catalog/${id}/reviews`}>
+      <div className={styles.listingReviews}>
         <svg width="16" height="16" className={styles.listingReviewsIcon}>
           <use xlinkHref={`${sprite}#icon-star`} />
         </svg>
         {rating}
         ({reviews.length} Reviews)
-      </Link>
+      </div>
       <span className={styles.listingLocation}>
         <svg width="16" height="16">
           <use xlinkHref={`${sprite}#icon-map`} />

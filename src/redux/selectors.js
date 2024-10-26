@@ -15,8 +15,8 @@ export const selectFilteredCampers = createSelector(
         (amenity) => !filters.amenities[amenity] || camper[amenity]
       );
       const matchesTransmission = filters.transmission === '' || camper.transmission === filters.transmission;
-      const matchesEngine = filters.engine === '' || camper.engine === filters.engine;
-      return matchesLocation && matchesAmenities && matchesTransmission && matchesEngine;
+      const matchesVehicleType = filters.form === '' || camper.form === filters.form;
+      return matchesLocation && matchesAmenities && matchesTransmission && matchesVehicleType;
     });
 
     return [

@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styles from './DateInput.module.css';
 
-const DateInput = ({ label, value, onChange, id }) => {
+const DateInput = ({ label, value, onChange, id, required }) => {
   const [startDate, setStartDate] = useState(value);
 
   useEffect(() => {
@@ -25,6 +25,7 @@ const DateInput = ({ label, value, onChange, id }) => {
         minDate={new Date()}
         placeholderText={label}
         dateFormat="yyyy-MM-dd"
+        required={required}
       />
     </div>
   );

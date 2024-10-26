@@ -15,7 +15,7 @@ const initialFiltersState = {
     [VEHICLE_EQUIPMENT.WATER]: false,
   },
   transmission: '',
-  engine: '',
+  form: '',
 };
 
 const filtersSlice = createSlice({
