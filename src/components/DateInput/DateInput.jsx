@@ -1,21 +1,34 @@
+import { useEffect, useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import styles from './DateInput.module.css';
 
-
 const DateInput = ({ label, value, onChange, id }) => {
+  const [startDate, setStartDate] = useState(value);
+
+  useEffect(() => {
+    setStartDate(value || null);
+  }, [value]);
+
+  const handleDateChange = (date) => {
+    setStartDate(date);
+    onChange(date);
+  };
+
   return (
-    <div className={styles.inputContainer}>
-      <label htmlFor={id} className={styles.label}>{label}</label>
-      <input
-        type="date"
+    <div className={styles.formField}>
+      <DatePicker
         id={id}
-        value={value}
-        onChange={onChange}
-        className={styles.input}
-        min={new Date().toISOString().split('T')[0]}
+        selected={startDate}
+        onChange={handleDateChange}
+        className={styles.inputField}
+        minDate={new Date()}
+        placeholderText={label}
+        dateFormat="yyyy-MM-dd"
       />
-      <small className={styles.helperText}>Select a date between today</small>
     </div>
   );
 };
 
 export default DateInput;
+

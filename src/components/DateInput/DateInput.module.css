@@ -1,26 +1,31 @@
 @import '@styles/variables.css';
 
-.inputContainer {
+.formField {
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
+    gap: 8px;
+    width: 100%;
 }
 
-.label {
-    margin-bottom: 4px;
-    font-weight: bold;
-}
-
-.input {
-    padding: 10px;
+.inputField {
+    width: 100%;
+    padding: 18px;
     font-size: 16px;
+    border: none;
     border-radius: 8px;
-    border: 1px solid var(--light-gray-1);
-    background-color: var(--light-gray-3);
+    background-color: #F7F7F7;
+    outline: none;
 }
 
-.helperText {
-    margin-top: 4px;
-    font-size: 12px;
-    color: var(--gray);
+.inputField::placeholder {
+    color: #6C717B;
+}
+
+.textarea {
+    min-height: 118px;
+}
+
+.react-datepicker__month-container {
+    border-radius: 12px;
+    border-color: #475467;
 }
