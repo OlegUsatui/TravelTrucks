@@ -6,6 +6,9 @@
 }
 
 .camperDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--light-gray-3);
     padding: 44px 52px;
     border-radius: 10px;
@@ -16,7 +19,7 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: auto;
 }
 
 .camperAmenityTag {

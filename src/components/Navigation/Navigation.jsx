@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <nav>
       <NavLink to="/" className={buildLinkClass}>Home</NavLink>
-      <NavLink to="/catalog" className={buildLinkClass}>Catalog</NavLink>
+      <NavLink to="/catalog" className={buildLinkClass} end>Catalog</NavLink>
     </nav>
   );
 };
