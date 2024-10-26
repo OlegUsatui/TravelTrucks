@@ -1,6 +1,7 @@
-import styles from './ReviewCard.module.css';
-import typographyStyles from '@styles/Typography.module.css';
 import StarRating from '@components/StarRating/StarRating.jsx';
+import typographyStyles from '@styles/Typography.module.css';
+import styles from './ReviewCard.module.css';
+
 
 const ReviewCard = ({ name, rating, reviewText }) => {
   const renderAvatar = () => {
@@ -10,6 +11,7 @@ const ReviewCard = ({ name, rating, reviewText }) => {
       </div>
     );
   };
+
   return (
     <div className={styles.reviewCard}>
       <div className={styles.header}>
@@ -19,7 +21,7 @@ const ReviewCard = ({ name, rating, reviewText }) => {
           <StarRating rating={rating} />
         </div>
       </div>
-      <div className={typographyStyles.paragraph}>{reviewText}</div>
+      <p className={typographyStyles.paragraph}>{reviewText}</p>
     </div>
   );
 };

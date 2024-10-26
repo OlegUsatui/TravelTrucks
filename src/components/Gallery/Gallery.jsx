@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import styles from './Gallery.module.css';
+
 
 const Gallery = ({ images }) => {
   return (

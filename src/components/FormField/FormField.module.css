@@ -11,12 +11,12 @@
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    background-color: #F7F7F7;
+    background-color: var(--light-gray-3);
     outline: none;
 }
 
 .inputField::placeholder {
-    color: #6C717B;
+    color: var(--gray);
 }
 
 .textarea {

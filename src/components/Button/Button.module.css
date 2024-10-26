@@ -33,7 +33,7 @@
 }
 
 .button:disabled {
-    background-color: #ccc;
-    color: #666;
+    background-color: var(--light-gray-3);
+    color: var(--gray);
     cursor: not-allowed;
 }

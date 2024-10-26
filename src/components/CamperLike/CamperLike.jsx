@@ -1,8 +1,9 @@
-import styles from './CamperLike.module.css';
-import sprite from '../../public/sprite.svg';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleFavorite } from '@redux/favoritesSlice';
-import { useEffect } from 'react';
+import sprite from '@public/sprite.svg';
+import styles from './CamperLike.module.css';
+
 
 const CamperLike = ({ camperId }) => {
   const dispatch = useDispatch();

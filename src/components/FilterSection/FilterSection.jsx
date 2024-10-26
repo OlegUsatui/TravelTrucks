@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { clearFilters, setFilters } from '@redux/filtersSlice.js';
+import { setFilters } from '@redux/filtersSlice.js';
 import FilterCategory from '@components/FilterCategory/FilterCategory.jsx';
 import LocationFilter from '@components/LocationFilter/LocationFilter.jsx';
 import Button from '@components/Button/Button.jsx';
-import styles from './FilterSection.module.css';
 import { VEHICLE_EQUIPMENT, TRANSMISSION_TYPES, VEHICLE_TYPES } from '@constants/filterEnums.js';
+import styles from './FilterSection.module.css';
+
 
 const FilterSection = () => {
   const dispatch = useDispatch();

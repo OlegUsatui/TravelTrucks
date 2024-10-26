@@ -1,6 +1,7 @@
-import Navigation from '../Navigation/Navigation.jsx';
-import Logo from '../Logo/Logo.jsx';
+import Logo from '@components/Logo/Logo.jsx';
+import Navigation from '@components/Navigation/Navigation.jsx';
 import styles from './Header.module.css';
+
 
 const Header = () => {
   return (
@@ -14,4 +15,3 @@ const Header = () => {
 };
 
 export default Header;
-

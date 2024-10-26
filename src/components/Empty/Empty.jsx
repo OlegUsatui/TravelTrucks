@@ -1,6 +1,7 @@
 import sprite from '@public/sprite.svg';
 import styles from './Empty.module.css';
 
+
 const Empty = ({ text, height }) => {
   return (
     <div className={styles.noResults}>
@@ -9,7 +10,7 @@ const Empty = ({ text, height }) => {
         <use xlinkHref={`${sprite}#icon-sad-face`} />
       </svg>
     </div>
-  )
-}
+  );
+};
 
 export default Empty;

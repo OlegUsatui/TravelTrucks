@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
-import typographyStyles from '@styles/Typography.module.css';
 import Button from '@components/Button/Button.jsx';
 import FormField from '@components/FormField/FormField.jsx';
-import styles from './BookingForm.module.css';
 import DateInput from '@components/DateInput/DateInput.jsx';
+import typographyStyles from '@styles/Typography.module.css';
+import styles from './BookingForm.module.css';
+
 
 const BookingForm = () => {
   const [formData, setFormData] = useState({
@@ -37,7 +38,7 @@ const BookingForm = () => {
 
     setTimeout(() => {
       toast.success('Booking request sent successfully!');
-      console.log('User data', formData);
+
       setFormData({
         name: '',
         email: '',

@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
-import css from './Navigation.module.css';
+import styles from './Navigation.module.css';
+
 
 const buildLinkClass = ({ isActive }) => {
-  return clsx(css.link, isActive && css.active);
+  return clsx(styles.link, isActive && styles.active);
 };
 
 const Navigation = () => {
@@ -16,4 +17,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-

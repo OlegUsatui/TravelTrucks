@@ -1,5 +1,5 @@
-import styles from './FilterCategory.module.css';
 import FilterItem from '@components/FilterItem/FilterItem.jsx';
+import styles from './FilterCategory.module.css';
 
 
 const FilterCategory = ({ title, list, onFilterChange, selectedFilters }) => {

@@ -1,11 +1,12 @@
-import Button from '@components/Button/Button.jsx';
-import styles from './ListingCard.module.css';
 import { useNavigate } from 'react-router-dom';
+import Button from '@components/Button/Button.jsx';
 import CamperTitle from '@components/CamperTitle/CamperTitle.jsx';
 import CamperPrice from '@components/CamperPrice/CamperPrice.jsx';
 import CamperRatingAndLocation from '@components/CamperRatingAndLocation/CamperRatingAndLocation.jsx';
 import CamperLike from '@components/CamperLike/CamperLike.jsx';
 import CamperTagsList from '@components/CamperTagsList/CamperTagsList.jsx';
+import styles from './ListingCard.module.css';
+
 
 const ListingCard = ({ item }) => {
   const navigate = useNavigate();

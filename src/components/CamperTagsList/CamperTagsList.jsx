@@ -1,6 +1,7 @@
 import CategoryTag from '@components/CategoryTag/CategoryTag.jsx';
 import styles from './CamperTagsList.module.css';
 
+
 const CamperTagsList = ({ item }) => {
   return (
     <div className={styles.listingTags}>
@@ -17,4 +18,6 @@ const CamperTagsList = ({ item }) => {
     </div>
   );
 };
+
 export default CamperTagsList;
+

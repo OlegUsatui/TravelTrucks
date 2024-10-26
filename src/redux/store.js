@@ -3,6 +3,7 @@ import campersReducer from './campersSlice.js';
 import filtersReducer from './filtersSlice';
 import favoritesReducer from './favoritesSlice.js';
 
+
 const rootReducer = combineReducers({
   campers: campersReducer,
   filters: filtersReducer,

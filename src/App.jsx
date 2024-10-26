@@ -1,8 +1,8 @@
-import './App.module.css';
 import React, { Suspense } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Header from '@components/Header/Header.jsx';
 import Loader from '@components/Loader/Loader.jsx';
+import './App.module.css';
 
 const HomePage = React.lazy(() => import('./pages/HomePage/HomePage.jsx'));
 const CatalogPage = React.lazy(() => import('./pages/CatalogPage/CatalogPage.jsx'));

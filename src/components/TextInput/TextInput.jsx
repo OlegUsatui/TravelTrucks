@@ -1,12 +1,12 @@
+import sprite from '@public/sprite.svg';
 import styles from './TextInput.module.css';
-import sprite from '../../public/sprite.svg';
+
 
 const TextInput = ({ label, value, onChange, placeholder, id }) => {
   return (
     <div className={styles.inputContainer}>
       <label htmlFor={id} className={styles.label}>{label}</label>
       <div className={styles.inputWrapper}>
-
         <input
           type="text"
           id={id}

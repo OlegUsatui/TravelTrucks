@@ -4,15 +4,14 @@ import { selectFilteredCampers } from '@redux/selectors';
 import Loader from '@components/Loader/Loader.jsx';
 import ListingCard from '@components/ListingCard/ListingCard.jsx';
 import Button from '@components/Button/Button.jsx';
-import styles from './CatalogList.module.css';
 import Error404 from '@components/Error404/Error404.jsx';
-import sprite from '@public/sprite.svg';
 import Empty from '@components/Empty/Empty.jsx';
+import styles from './CatalogList.module.css';
+
 
 const CatalogList = () => {
   const filteredCampers = useSelector(selectFilteredCampers);
   const status = useSelector((state) => state.campers.status);
-  const error = useSelector((state) => state.campers.error);
 
   const [visibleCount, setVisibleCount] = useState(3);
 
@@ -30,7 +29,7 @@ const CatalogList = () => {
 
   if (filteredCampers.length === 0) {
     return (
-        <Empty text={'No campers available...'} height={'425'}></Empty>
+      <Empty text={'No campers available...'} height={'425'}></Empty>
     );
   }
 
@@ -38,7 +37,7 @@ const CatalogList = () => {
 
   return (
     <div className={styles.catalogContainer}>
-    <ul className={styles.catalogList}>
+      <ul className={styles.catalogList}>
         {filteredCampers.slice(0, visibleCount).map((camper) => (
           <ListingCard key={camper.id} item={camper} />
         ))}

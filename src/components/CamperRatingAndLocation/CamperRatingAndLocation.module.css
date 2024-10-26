@@ -17,7 +17,7 @@
 }
 
 .listingReviewsIcon {
-    fill: #FFC531;
+    fill: var(--yellow);
 }
 
 .listingLocation {

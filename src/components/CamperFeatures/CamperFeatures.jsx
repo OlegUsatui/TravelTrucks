@@ -1,8 +1,9 @@
-import styles from './CamperFeatures.module.css';
-import typographyStyles from '@styles/Typography.module.css';
 import { useSelector } from 'react-redux';
 import CamperTagsList from '@components/CamperTagsList/CamperTagsList.jsx';
 import BookingForm from '@components/BookingForm/BookingForm.jsx';
+import typographyStyles from '@styles/Typography.module.css';
+import styles from './CamperFeatures.module.css';
+
 
 const CamperFeatures = () => {
   const camper = useSelector((state) => state.campers.camperDetails);

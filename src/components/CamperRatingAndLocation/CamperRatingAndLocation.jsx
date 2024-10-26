@@ -1,6 +1,5 @@
+import sprite from '@public/sprite.svg';
 import styles from './CamperRatingAndLocation.module.css';
-import { Link } from 'react-router-dom';
-import sprite from '../../public/sprite.svg';
 
 
 const CamperRatingAndLocation = ({ rating, reviews, location }) => {

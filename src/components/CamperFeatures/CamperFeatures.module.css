@@ -22,15 +22,6 @@
     margin-bottom: auto;
 }
 
-.camperAmenityTag {
-    background-color: #e7e8ea;
-    padding: 8px 12px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
 .camperVehicleDetails {
     margin-top: 24px;
 }
@@ -40,7 +31,6 @@
     padding-bottom: 24px;
     border-bottom: 1px solid var(--light-gray-1);
 }
-
 
 .camperVehicleDetails ul {
     list-style: none;

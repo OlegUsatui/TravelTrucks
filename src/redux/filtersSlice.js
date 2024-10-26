@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { VEHICLE_EQUIPMENT } from '@constants/filterEnums.js';
 
+
 const initialFiltersState = {
   location: '',
   amenities: {
@@ -24,10 +25,9 @@ const filtersSlice = createSlice({
   reducers: {
     setFilters: (state, action) => {
       return { ...state, ...action.payload };
-    },
-    clearFilters: () => initialFiltersState,
+    }
   },
 });
 
-export const { setFilters, clearFilters } = filtersSlice.actions;
+export const { setFilters } = filtersSlice.actions;
 export default filtersSlice.reducer;

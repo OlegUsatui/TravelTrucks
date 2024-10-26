@@ -1,5 +1,6 @@
 import TextInput from '@components/TextInput/TextInput.jsx';
 
+
 const LocationFilter = ({ value, onChange }) => {
   const handleLocationChange = (e) => {
     onChange(e.target.value);

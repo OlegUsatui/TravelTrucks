@@ -1,5 +1,6 @@
 import styles from './CategoryTag.module.css';
-import sprite from '../../public/sprite.svg';
+import sprite from '@public/sprite.svg';
+
 
 const CategoryTag = ({ label, icon }) => {
   return (

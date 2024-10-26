@@ -3,6 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styles from './DateInput.module.css';
 
+
 const DateInput = ({ label, value, onChange, id, required }) => {
   const [startDate, setStartDate] = useState(value);
 
@@ -32,4 +33,3 @@ const DateInput = ({ label, value, onChange, id, required }) => {
 };
 
 export default DateInput;
-
