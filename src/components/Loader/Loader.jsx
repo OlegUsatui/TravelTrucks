@@ -1,17 +1,19 @@
-import { FallingLines, Grid } from 'react-loader-spinner';
+import { RotatingLines } from 'react-loader-spinner';
 import styles from './Loader.module.css';
 
 const Loader = () => (
   <div className={styles.loader}>
-    <Grid
+    <RotatingLines
       visible={true}
-      height="80"
-      width="80"
-      color="#6C7178"
-      ariaLabel="grid-loading"
-      radius="12.5"
+      height="96"
+      width="96"
+      color="grey"
+      strokeColor="grey"
+      strokeWidth="5"
+      animationDuration="0.75"
+      ariaLabel="rotating-lines-loading"
       wrapperStyle={{}}
-      wrapperClass="grid-wrapper"
+      wrapperClass=""
     />
   </div>
 )
