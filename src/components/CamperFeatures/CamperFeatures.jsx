@@ -6,8 +6,6 @@ import BookingForm from '@components/BookingForm/BookingForm.jsx';
 
 const CamperFeatures = () => {
   const camper = useSelector((state) => state.campers.camperDetails);
-  const status = useSelector((state) => state.campers.status);
-  const error = useSelector((state) => state.campers.error);
 
   return (
     <div className={styles.camperFeatures}>

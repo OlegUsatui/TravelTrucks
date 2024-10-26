@@ -1,4 +1,4 @@
-import sprite from '@assets/sprite.svg';
+import sprite from '../../public/sprite.svg';
 import styles from './Logo.module.css';
 import { Link } from 'react-router-dom';
 

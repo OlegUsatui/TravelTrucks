@@ -1,7 +1,7 @@
 @import '@styles/variables.css';
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     background-color: var(--light-gray-3);

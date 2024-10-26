@@ -1,5 +1,5 @@
 import styles from './CamperLike.module.css';
-import sprite from '@assets/sprite.svg';
+import sprite from '../../public/sprite.svg';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleFavorite } from '@redux/favoritesSlice';
 import { useEffect } from 'react';

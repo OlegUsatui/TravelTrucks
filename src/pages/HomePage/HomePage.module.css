@@ -1,8 +1,9 @@
 @import '@styles/variables.css';
 
 .homePage {
+    margin-top: -72px;
     height: 100vh;
-    background-image: url('@assets/camper.png');
+    background-image: url('@public/camper.png');
     background-size: cover;
     background-position: center;
     color: var(--white);

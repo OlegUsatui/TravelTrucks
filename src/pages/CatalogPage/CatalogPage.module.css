@@ -1,7 +1,6 @@
 @import '@styles/variables.css';
 
 .catalogPage {
-    padding-top: 72px;
     background-color: var(--white);
 }
 

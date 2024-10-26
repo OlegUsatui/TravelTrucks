@@ -31,3 +31,9 @@
 .outlined:hover {
     border-color: var(--red-dark);
 }
+
+.button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}

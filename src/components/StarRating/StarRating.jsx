@@ -1,5 +1,5 @@
 import styles from './StarRating.module.css';
-import sprite from '@assets/sprite.svg';
+import sprite from '../../public/sprite.svg';
 
 const StarIcon = ({ filled }) => (
   <svg

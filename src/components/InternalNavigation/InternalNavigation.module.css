@@ -13,9 +13,10 @@
     font-weight: 600;
     line-height: 24px;
     position: relative;
+    background: transparent;
 }
 
-.active::after {
+.tabButton.active::after {
     content: "";
     position: absolute;
     bottom: -25px;
@@ -23,4 +24,25 @@
     right: 0;
     height: 5px;
     background-color: #e44848;
+    transition: left 0.5s ease, width 0.5s ease;
+}
+
+.tabContent {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tabContentEnter {
+    opacity: 0;
+}
+
+.tabContentEnterActive {
+    opacity: 1;
+}
+
+.tabContentExit {
+    opacity: 1;
+}
+
+.tabContentExitActive {
+    opacity: 0;
 }

@@ -1,5 +1,5 @@
 import styles from './TextInput.module.css';
-import sprite from '@assets/sprite.svg';
+import sprite from '../../public/sprite.svg';
 
 const TextInput = ({ label, value, onChange, placeholder, id }) => {
   return (

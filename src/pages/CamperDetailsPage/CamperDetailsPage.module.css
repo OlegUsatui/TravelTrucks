@@ -1,7 +1,6 @@
 @import '@styles/variables.css';
 
 .detailsPage {
-    padding-top: 72px;
     background-color: var(--white);
 }
 

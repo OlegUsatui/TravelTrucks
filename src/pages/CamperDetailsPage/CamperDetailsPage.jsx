@@ -59,7 +59,6 @@ const CamperDetailsPage = () => {
           <p className={styles.camperDescription}>{camper.description}</p>
         </div>
         <InternalNavigation />
-        <Outlet />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import styles from './FilterItem.module.css';
-import sprite from '@assets/sprite.svg';
+import sprite from '../../public/sprite.svg';
 
 const FilterItem = ({ icon, name, selected, onChange }) => {
   return (
