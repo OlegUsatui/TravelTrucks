@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectFilteredCampers } from '@redux/selectors';
 import Loader from '@components/Loader/Loader.jsx';
@@ -12,6 +12,10 @@ const CatalogList = () => {
   const error = useSelector((state) => state.campers.error);
 
   const [visibleCount, setVisibleCount] = useState(3);
+
+  useEffect(() => {
+    setVisibleCount(3);
+  }, [filteredCampers]);
 
   const handleLoadMore = () => {
     setVisibleCount((prevCount) => prevCount + 3);
