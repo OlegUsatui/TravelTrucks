@@ -14,8 +14,10 @@ TravelTrucks is a web application for browsing, booking, and reviewing campervan
 - **Frontend**: React, Redux, Vite
 - **Styling**: CSS Modules, `react-photo-view` for gallery management, `react-datepicker` for booking dates.
 - **Routing**: React Router
+- **HTTP Client**: Axios for API requests
 - **State Management**: Redux with Redux Toolkit
 - **Utilities**: `clsx` for conditional class names
+- **Loading Indicators**: `react-loader-spinner` for showing loading animations
 
 ## Installation
 1. Clone the repository:
@@ -41,12 +43,6 @@ TravelTrucks is a web application for browsing, booking, and reviewing campervan
 - **`src/redux`**: Contains Redux slices, including `campersSlice` and `favoritesSlice` for managing state.
 - **`src/constants`**: Contains enums and other constants used throughout the project.
 - **`src/styles`**: Contains global styles such as Typography.module.css and variables.css.
-
-## Key Components
-- **`Gallery`**: Utilizes `react-photo-view` to display campervan images with zoom functionality.
-- **`BookingForm`**: Allows users to book a campervan. After successful submission, the form is cleared, and a success message is shown using a toast notification.
-- **`DateInput`**: Uses `react-datepicker` for selecting a booking date.
-- **`InternalNavigation`**: Provides tabs for navigating between camper features and reviews, including smooth animations.
 
 ## How to Add to Favorites
 Campervans can be added to the favorites list by clicking the "like" button on the camper listing. The favorites list is saved using local storage, allowing users to retain their selection after refreshing the page.
